@@ -170,7 +170,19 @@ html {
   width: 100%;
   border-bottom: var(--border-large) solid var(--color-gold);
   background-color: var(--color-dark);
+  background-image: url(./myndir/background.png);
   color: var(--color-gold-light);
+}
+
+header .protection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header header {
@@ -188,10 +200,28 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   padding: var(--spacing) 0;
-  width: 100%;
-  background-color: var(--color-light);
+  width: 1440px;
+  height: 60px;
+  /* background-color: var(--color-light); */
   color: var(--color-dark);
 }
+
+.navigation .search{
+  width: 450px;
+  height: 60px;
+  left: 495px;
+}
+/* 
+.navigation .logo-container{
+  width: 30px;
+  left: 15px;
+} */
+
+.nav-head{
+  background-image: url(//myndir/background.png);
+}
+
+
 
 .navigation ul {
   display: flex;
