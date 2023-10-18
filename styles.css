@@ -152,26 +152,29 @@ html {
 /* Layout */
 .wrapper {
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
+  /* grid-template-rows: auto; */
+  /* grid-template-columns: 100%; */
   /* grid items eru miðjuð */
-  justify-items: center;
-  gap: var(--vertical-space);
+  /* justify-items: center; */
+  /* gap: var(--vertical-space); */
 }
 
 
 /** Haus **/
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
   gap: var(--spacing);
   padding-top: var(--spacing);
   width: 100%;
-  border-bottom: var(--border-large) solid var(--color-gold);
-  background-color: var(--color-dark);
+  padding-bottom: var(--spacing);
+  /* border-bottom: var(--border-large) solid var(--color-gold); */
+  /* background-color: var(--color-dark); */
   background-image: url(./myndir/background.png);
-  color: var(--color-gold-light);
+  height: 565px;
+  width: 1440px;
+  /* color: var(--color-gold-light); */
 }
 
 header .protection {
@@ -197,12 +200,11 @@ header .protection {
 /** Valmynd **/
 .navigation {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: space-between;
   padding: var(--spacing) 0;
   width: 1440px;
   height: 60px;
-  /* background-color: var(--color-light); */
   color: var(--color-dark);
 }
 
@@ -254,6 +256,7 @@ header .protection {
   padding: var(--spacing);
   border-top: var(--border-large) solid var(--color-gold);
   width: 100%;
+
 
   background-color: var(--color-dark);
   color: var(--color-gold-light);
