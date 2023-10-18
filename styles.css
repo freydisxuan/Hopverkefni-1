@@ -101,7 +101,9 @@
 
   ul {
     list-style: none;
+
   }
+
 }
 
 @media (min-width: 500px) {
@@ -120,7 +122,9 @@
     section:first-child {
       grid-column-start: 3;
     }
+
   }
+
 }
 
 
@@ -143,6 +147,7 @@
 
 .box {
   grid-column: span 12;
+  background-color:  red;
 
   display: flex;
   flex-direction: column;
@@ -173,6 +178,8 @@
     object-position: top center;
   }
 }
+
+
 
 @media (min-width: 500px) {
   .boxes {
