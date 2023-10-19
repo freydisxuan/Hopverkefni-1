@@ -151,6 +151,7 @@ html {
 /* Layout */
 .wrapper {
   display: grid;
+  grid-template-columns: repeat();
   grid-template-rows: auto;
   grid-template-columns: 100%;
   /* grid items eru miðjuð */
@@ -199,11 +200,18 @@ header .protection {
 /** Valmynd **/
 .navigation {
   display: flex;
-  padding: var(--spacing) 0;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /* padding: var(--spacing) 0; */
   width: 1440px;
   height: 60px;
   color: var(--color-dark);
 }
+
+.navigation ul{
+  list-style-type: none;
+}
+
 
 .navigation .search{
   width: 450px;
@@ -221,16 +229,6 @@ header .protection {
 }
 
 
-
-.navigation ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--spacing);
-  width: 100%;
-  max-width: var(--width-offset);
-  list-style: none;
-}
 
 
 /** Meginmál **/
