@@ -150,13 +150,35 @@ html {
 
 /* Layout */
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat();
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(); */
+  /* grid-template-rows: auto; */
+  /* grid-template-columns: 100%; */
   /* grid items eru miðjuð */
-  justify-items: center;
-  gap: var(--vertical-space);
+  /* justify-items: center; */
+  /* gap: var(--vertical-space); */
+
+
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/cables.jpg");
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+
+	@media (min-width: 700px) {
+		clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+	}
+
+	@media (min-width: 1100px) {
+		clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);   
+	}
 }
 
 
@@ -230,6 +252,18 @@ header .protection {
 /* .nav-head{
   background-image: url(./myndir/background.png);
 } */
+
+
+/* 
+.navigation .search{
+  width: 450px;
+  height: 60px;
+  left: 495px;
+} */
+
+
+
+ 
 
 
 

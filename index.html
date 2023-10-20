@@ -17,29 +17,33 @@
     <!-- <img src="../myndir/logo.png" width="30" alt=""> -->
     <!-- <h1><strong><a href="../index.html">Tæknibúðin</a></strong></h1> -->
     <div class="wrapper">
-      
-      div class="navigation">
-        <ul>
-          <li class="logo-container"><img src="../myndir/logo.png" width="30" alt=""></li>
-          <li><a href="../index.html"> Tæknibúðin</a></li> 
-          <li class="search-bar">  <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."></li>
-          <li><a href="sidur/pontun.html">Nýjar vörur</a></li>
-          <li><a href="sidur/pontun.html">Tilboðsvörur</a></li>
-          <li><a href="sidur/pontun.html">Allar vörur</a></li>
-          <li class="vorumerkid"> <img src="../myndir/cart.png" width="30" alt=""></li>
-        </ul>
-      </div>
-      
-      
-      <div class="header">
-        <!-- hér fyrir neðan er headerinn -->
-        <header>
+      <header>
+        <div class="navigation">
+          <a href="index.html"><strong class="shop-name">Tæknibúðin</strong></a>
+          <nav>
+            <ul>
+              <li class="logo-container"><img src="../myndir/logo.png" width="30" alt=""></li>
+              <li><a href="../index.html"> Tæknibúðin</a></li> 
+              <li class="search">  <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."></li>
+              <li class="categories"><a href="sidur/pontun.html">Nýjar vörur</a></li>
+              <li class="categories"><a href="sidur/pontun.html">Tilboðsvörur</a></li>
+              <li class="categories"><a href="sidur/pontun.html">Allar vörur</a></li>
+              <li class="cart"> <img src="../myndir/cart.png" width="30" alt=""></li>
+            </ul>
+          </nav>
+          
+          <div class="icon-wrapper">
+            <div class="cart">
+              <div class="cart-count">1</div>
+              <a title="Customer-Cart" href="/sidur/pontun.html"><img src="myndir/cart.png" alt=""></a>
+            </div>
+          </div>
+        </div> 
+        <div class="heading">
           <h1>Tilboðsvika</h1>
-          <p>Keyptu græjurnar hjá okkur!</p>
-        </header>
-      </div>
-
-      <
+          <p class="subheading">Keyptu græjurnar hjá okkur! </p>
+        </div>   
+      </header>
 
       <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
@@ -47,21 +51,17 @@
         <div class="boxes">
           <section class="box">
             <h2>Nýjar vörur í hverri viku</h2>
-            <div class="content">
               <p>
-                Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum
-                upp á frábært verð því lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec sit amet elementum orci, ac feugiat
-                mauris.
+                 Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum
+                 upp á frábært verð því lorem ipsum dolor sit amet, consectetur
+                 adipiscing elit. Donec sit amet elementum orci, ac feugiat
+                 mauris.
               </p>
-            </div>
-            <a class="button" href="./sidur/vorulisti.html"
-              >SKOÐA NÝJAR VÖRUR</a
-            >
+              <a class="button" href="./sidur/vorulisti.html">SKOÐA NÝJAR VÖRUR</a>
           </section>
-          <section class="box">
+          <div class="box">
             <img src="../myndir/airplane.png" width="317" alt="">
-          </section>
+          </div>
         </div>
 
         <section class="newest-products">
