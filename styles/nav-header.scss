@@ -1,11 +1,40 @@
-.navigation {
-  .categories {
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #353535;
+  color: #fff;
+}
 
-  .cart {
-  }
-  .search {
-  }
-  .logo-container {
-  }
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 40px;
+}
+
+.search-bar input {
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.menu span {
+  margin-right: 10px;
+}
+
+.cart img {
+  width: 60px;
+  height: 60px;
 }
