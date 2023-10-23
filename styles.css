@@ -113,7 +113,7 @@ html {
 .button {
   display: inline-block;
 
-  border: 1px solid var(--color-coffee);
+  border: var(--border-small) solid var(--color-coffee);
   border-radius: var(--border-radius);
   padding: calc(var(--spacing) / 2) calc(var(--spacing));
 
@@ -169,7 +169,8 @@ html {
 
 .header-nav {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  margin-top: var(--spacing);
 
   flex-direction: row;
   flex-wrap: wrap;
@@ -182,36 +183,36 @@ html {
   text-decoration: none;
 }
 
-nav {
+.navigation {
   display: block;
 }
 
 
-nav ul {
+.navigation ul {
   display: flex;
   align-items: center;
 
   list-style: none;
 }
 
-nav ul a {
+.navigation ul a {
   color: var(--color-black-coffee);
   text-decoration: none;
 }
 
-nav ul input {
+.navigation ul input {
   border-radius: 5px;
   height: 40px;
   text-indent: 7.5px;
   width: 392px;
 }
 
-nav ul li {
+.navigation ul li {
   margin: 0 15px;
   position: relative;
 }
 
-nav ul img {
+.navigation ul img {
   height: 20px;
   left: 95%;
   margin-left: -10px;
@@ -261,7 +262,7 @@ nav ul img {
   width: 30px;
 }
 
-.shop-name::before {
+.shop::before {
   display: flex;
   background-image: url("myndir/logo.png");
   background-size: 30px;
@@ -274,7 +275,7 @@ nav ul img {
   z-index: 100;
 }
 
-.shop-name {
+.shop {
   display: flex;
   align-items: center;
 
@@ -299,7 +300,7 @@ nav ul img {
   width: 100%;
 }
 
-.index-heading {
+.mainheading {
   display: flex;
   align-items: center;
 
@@ -308,15 +309,110 @@ nav ul img {
   width: 100%;
 }
 
-.index-heading h1 {
-  font-size: 80px;
-  line-height: 96px;
-}
-
-.index-heading .subheading {
+.mainheading .subheading {
   font-size: 36px;
   line-height: 48px;
 }
+
+.mainheading h1 {
+  font-size: 160px;
+  line-height: 192px;
+}
+
+.hamburger-display {
+  height: 538px;
+  margin-top: 1px;
+  overflow: hidden;
+  position: absolute;
+  right: -35px;
+  width: 500px;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+  justify-content: center;
+  width: 60px;
+}
+
+.hamburger-menu img {
+  height: 30px;
+  left: 455px;
+  object-fit: contain;
+  position: absolute;
+  width: 30px;
+}
+
+.hamburger-check {
+  cursor: pointer;
+  height: 60px;
+  left: 450px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 4;
+}
+
+.hamburger-menu-dropdown {
+  position: absolute;
+  transform: translateX(520px);
+  transition: 0.3s;
+  width: 500px;
+}
+
+.hamburger-menu-dropdown ul {
+  display: flex;
+
+  align-items: center;
+  background-color: var(--color-light);
+  flex-direction: column;
+  list-style: none;
+}
+
+.hamburger-menu-dropdown a {
+  text-decoration: none;
+}
+
+input:checked ~ .hamburger-menu-dropdown {
+  transform: none;
+}
+
+ul .hamburger-li {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+}
+
+ul .hamburger-li img {
+  height: 20px;
+  left: 95%;
+  margin-left: -5px;
+  margin-top: 10px;
+  position: absolute;
+  width: 20px;
+}
+
+ul .hamburger-li input {
+  border-radius: var(--border-radius);
+  height: 40px;
+  text-indent: 7.5px;
+  width: 485px;
+}
+
+ul .hamburger-li .hamburger-a {
+  color: var(--color-black-coffee);
+}
+
+.hamburger-menu-dropdown ul li:last-child {
+  font-size: var(--font-base-body-px);
+  line-height: normal;
+  margin-top: 15px;
+}
+
 
 
 /** Meginmál **/
