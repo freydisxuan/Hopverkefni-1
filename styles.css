@@ -10,8 +10,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -247,6 +247,7 @@ img {
   .boxes {
     grid-template-columns: repeat(var(--columns), 1fr);
   }
+  
   .boxes .box {
     grid-column: span 6;
   }
