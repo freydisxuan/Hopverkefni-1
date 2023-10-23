@@ -42,17 +42,22 @@ html {
   --border-large: 8px;
   --border-radius: 6px;
   /* Litir */
-  --color-gold: #ffe7ae;
-  --color-gold-light: #fff1cf;
-  --color-dark: #2f0505;
-  --color-light: #fff9ee;
+  --color-coffee: #704c34;
+  --color-black-coffee: #402c1c;
+  --color-light: #ffffff;
+  --color-coffee-with-milk: #e1cec2;
+
+   /* Leturstillingar */
+  --font-base-size: 1rem;
+  --font-family-base: "Lato", sans-serif;
+
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
   /* Letur stillingar */
   --font-base-size: 1rem;
-  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  /* --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif; */
   --font-family-heading: "Lora", Georgia, serif;
   /* Transitions */
   --transition-time-short: 300ms;
@@ -108,7 +113,7 @@ html {
 .button {
   display: inline-block;
 
-  border: 1px solid var(--color-dark);
+  border: 1px solid var(--color-coffee);
   border-radius: var(--border-radius);
   padding: calc(var(--spacing) / 2) calc(var(--spacing));
 
@@ -117,7 +122,7 @@ html {
   text-align: center;
 
   color: var(--color-light);
-  background-color: var(--color-dark);
+  background-color: var(--color-coffee);
 
   transition: background-color var(--transition-time-short)
       var(--transition-timing-function),
@@ -150,35 +155,13 @@ html {
 
 /* Layout */
 .wrapper {
-  /* display: grid; */
-  /* grid-template-columns: repeat(); */
-  /* grid-template-rows: auto; */
-  /* grid-template-columns: 100%; */
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
   /* grid items eru miðjuð */
-  /* justify-items: center; */
-  /* gap: var(--vertical-space); */
+  justify-items: center;
+  gap: var(--vertical-space);
 
-
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/cables.jpg");
-	background-position-y: bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	position: relative;
-	width: 100%;
-
-	@media (min-width: 700px) {
-		clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
-	}
-
-	@media (min-width: 1100px) {
-		clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);   
-	}
 }
 
 
@@ -218,8 +201,6 @@ header .protection {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #353535;
-  color: #fff;
 }
 
 .logo {
@@ -253,8 +234,8 @@ header .protection {
 
 
 .cart img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -331,24 +312,25 @@ header .protection {
   grid-template-rows: auto;
   gap: var(--vertical-space);
   justify-items: center;
+  align-items: center;
+  background-color: var(--color-coffee-with-milk);
 
   width: 100%;
 }
 
 .box {
-  grid-column: span 12;
-
+  
+ 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
 
   gap: var(--spacing);
 
   padding: calc(var(--spacing) * 0.5);
   width: 100%;
   min-height: 100px;
-
-  color: var(--color-dark);
-  /* background-color: var(--color-gold-light); */
+  background-color: var(--color-light);
   border-radius: 5px;
 
   .title {
