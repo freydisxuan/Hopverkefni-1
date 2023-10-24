@@ -5,27 +5,59 @@
     <meta charset="utf-8">
     <title>Forsíða</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../grid.css">
+    <!-- <link rel="stylesheet" href="../grid.css"> -->
     <meta name="Forsíða" content="Tæknibúðin Forsíða">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   </head>
-
+  <div class="wrapper">
   <body>
-    <nav class="navigation">
-      <ul> 
-        <li> <img src="../myndir/logo.png" width="30" alt=""> <h1><strong><a href="../index.html">Tæknibúðin</a></strong></h1></li>
-        <li><input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."></li>
-        <li><a href= "../sidur/vara.html">Nýjar vörur</a></li>
-        <li><a href= "../sidur/vara.html">Tilboðsvörur</a></li>
-        <li><a href= "../sidur/vorulisti.html">Allar vörur</a></li>
-        <li><a href="../sidur/pontun.html"><img src="../myndir/cart.png" width="30" alt=""></a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>Tilboðsvika</h1> 
-       <p>Keyptu græjurnar hjá okkur!</p>
+    <header class="header">
+      <div class="header-nav">
+        <a href="index.html"><b class="shop">Tæknibúðin</b></a>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <img src="myndir/glass.png" alt="">
+              <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
+            </li>
+            <li><a href="sidur/vorulisti.html">Nýjar vörur</a></li>
+            <li><a href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+            <li><a href="sidur/vorulisti.html">Allar vörur</a></li>
+          </ul>
+        </nav>
+                 
+      <div class="icon-wrapper">
+       <div class="cart">
+        <div class="cart-number">1</div>
+        <a title="Karfan þín" href="/sidur/pontun.html"><img src="myndir/cart.png" alt=""></a>
+      </div>
+      <div class="hamburger-menu-wrapper">
+        <div class="hamburger-display">
+          <div class="hamburger-menu">
+            <img img src="myndir/burger.png" alt="Flokkar">
+          </div>
+          <input class="hamburger-notified" type="checkbox">
+          <div class="hamburger-menu-dropdown">
+            <ul>
+              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Nýjar vörur</a></li>
+              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Allar vörur</a></li>
+              <li class="hamburger-li">
+                 <img src="myndir/glass.png" alt="">
+                 <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
+              </li>
+           </ul>
+        </div>
+       </div>
+      </div>
+      </div>
+      </div>
+      <div class="mainheading">
+        <h1>Tilboðsvika</h1>
+        <span class="subheading">Keyptu græjurnar hjá okkur!</span>
+      </div>
     </header>
     
   <main id="efni" class="main">
@@ -154,4 +186,5 @@
 
   </footer>
   </body>
+  </div>
 </html>
