@@ -1,0 +1,79 @@
+/* BOX! FREYDIS*/
+.boxes {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+  justify-items: center;
+  margin-bottom: calc(var(--spacing) * 2);
+  /* width: 100%; */
+  background-color: #e1cec2;
+  padding: 12px;
+}
+
+.boxes .box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  padding: calc(var(--spacing) * 0.5);
+  min-height: 100px;
+  width: 100%;
+  color: var(--color-dark);
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 12px;
+  /* margin-right: 0; */
+}
+
+.boxes .box .title {
+  margin-bottom: calc(var(--spacing) * 0.5);
+  border-bottom: var(--border-small) solid var(--color-dark);
+}
+
+.boxes .box .content {
+  flex: 1;
+}
+
+.boxes .box img {
+  max-height: 170px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.boxes .box .link {
+  margin-top: calc(var(--spacing) * 0.5);
+}
+
+.link {
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #fefefe;
+  color: #3c2a1e;
+  border: 1px solid #6f4e37;
+}
+
+.slay {
+  background-color: #e1cec2;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+@media (min-width: 500px) {
+  .boxes {
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+
+  .boxes .box {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 1000px) {
+  .boxes .box {
+    grid-column: span 3;
+  }
+}

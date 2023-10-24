@@ -1,0 +1,93 @@
+.hamburger-display {
+  height: 538px;
+  margin-top: 1px;
+  overflow: hidden;
+  position: absolute;
+  right: -35px;
+  width: 500px;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+  justify-content: center;
+  width: 60px;
+}
+
+.hamburger-menu img {
+  height: 30px;
+  left: 455px;
+  object-fit: contain;
+  position: absolute;
+  width: 30px;
+}
+
+.hamburger-notified {
+  cursor: pointer;
+  height: 60px;
+  left: 450px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 4;
+}
+
+.hamburger-menu-dropdown {
+  position: absolute;
+  transform: translateX(520px);
+  transition: 0.3s;
+  width: 500px;
+}
+
+.hamburger-menu-dropdown ul {
+  display: flex;
+
+  align-items: center;
+  background-color: var(--color-light);
+  flex-direction: column;
+  list-style: none;
+}
+
+.hamburger-menu-dropdown a {
+  text-decoration: none;
+}
+
+input:checked ~ .hamburger-menu-dropdown {
+  transform: none;
+}
+
+ul .hamburger-li {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+}
+
+ul .hamburger-li img {
+  height: 20px;
+  left: 95%;
+  margin-left: -5px;
+  margin-top: 10px;
+  position: absolute;
+  width: 20px;
+}
+
+ul .hamburger-li input {
+  border-radius: var(--border-radius);
+  height: 40px;
+  text-indent: 7.5px;
+  width: 485px;
+}
+
+ul .hamburger-li .hamburger-a {
+  color: var(--color-black-coffee);
+}
+
+.hamburger-menu-dropdown ul li:last-child {
+  font-size: var(--font-base-body-px);
+  line-height: normal;
+  margin-top: 15px;
+}

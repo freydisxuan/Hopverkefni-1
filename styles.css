@@ -15,6 +15,81 @@ html {
   box-sizing: inherit;
 }
 
+/* Leturgerðir */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans Display";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format("woff");
+}
+/* Layout */
+.wrapper {
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: var(--vertical-space);
+  min-height: 100vh;
+}
+
+/* Layout */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: var(--vertical-space);
+}
+
+/* Stillingar */
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter));
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+  --width-offset: calc(100% - (2 * var(--offset)));
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+  --color-primary: #f0f0f8;
+  --color-header: #fff;
+  --color-text: #000;
+  --color-border: #ccc;
+  /* Litir */
+  --color-coffee: #704c34;
+  --color-black-coffee: #402c1c;
+  --color-light: #ffffff;
+  --color-coffee-with-milk: #e1cec2;
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: "Lato", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Lora", Georgia, serif;
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
+}
+
 /* Almennt */
 html,
 input,
@@ -53,93 +128,50 @@ img {
   width: 1px;
 }
 
-/* Leturgerðir */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-display: swap;
-  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
-}
-@font-face {
-  font-family: "Noto Sans Display";
-  font-style: normal;
-  font-display: swap;
-  src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format("woff");
-}
-/* Stillingar */
-:root {
-  /* Grunn bilið okkar er 1rem == 16px */
-  --font-base-body-px: 16px;
-  --spacing: 1rem;
-  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
-  --vertical-space: calc(var(--gutter));
-  /* Hámarksbreidd á efni */
-  --max-width: 1400px;
-  --width-offset: calc(100% - (2 * var(--offset)));
-  /* Border breiddir */
-  --border-small: 1px;
-  --border-large: 8px;
-  --border-radius: 6px;
-  /* Grid stillingar */
-  --columns: 12;
-  --gutter: 30px;
-  --offset: 20px;
-  /* Litir */
-  --color-gold: #ffe7ae;
-  --color-gold-light: #fff1cf;
-  --color-dark: #2f0505;
-  --color-light: #fff9ee;
-  --color-primary: #f0f0f8;
-  --color-header: #fff;
-  --color-text: #000;
-  --color-border: #ccc;
-  /* Litir */
-  --color-coffee: #704c34;
-  --color-black-coffee: #402c1c;
-  --color-light: #ffffff;
-  --color-coffee-with-milk: #e1cec2;
-
-  /* Letur stillingar */
-  --font-base-size: 1rem;
-  --font-family-base: "Lato", Helvetica, Arial, sans-serif;
-  --font-family-heading: "Lora", Georgia, serif;
-  /* Transitions */
-  --transition-time-short: 300ms;
-  --transition-time-long: 600ms;
-  --transition-timing-function: ease-in-out;
-}
-
-/* Layout */
-.wrapper {
-  display: grid;
+/* Header */
+/* .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: var(--spacing);
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
+  padding-top: var(--spacing);
+  width: 100%;
+  color: var(--color-gold-light);
+} */
+/* 
+.header header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--width-offset);
+  text-align: center;
+} */
+/** Valmynd **/
+/* .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--spacing) 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: var(--color-dark);
+} */
+/* 
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: var(--vertical-space);
-  min-height: 100vh;
-}
-
-
-/* Layout */
-.wrapper {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
-  
-  justify-items: center;
-  gap: var(--vertical-space);
-
-}
+  gap: var(--spacing);
+  width: 100%;
+  max-width: var(--width-offset);
+  list-style: none;
+} */
 
 /* Navigation */
-
-
 .header-nav {
   display: flex;
   /* align-items: center; */
   margin-top: var(--spacing);
-
   flex-direction: row;
   flex-wrap: wrap;
   height: 60px;
@@ -155,11 +187,9 @@ img {
   display: block;
 }
 
-
 .navigation ul {
   display: flex;
   align-items: center;
-
   list-style: none;
 }
 
@@ -192,7 +222,6 @@ img {
 .icon-wrapper {
   display: flex;
   align-items: center;
-
   flex-direction: row;
   position: relative;
 }
@@ -200,7 +229,6 @@ img {
 .cart {
   display: flex;
   align-items: center;
-
   height: 40px;
   justify-content: center;
   position: relative;
@@ -235,7 +263,6 @@ img {
   background-image: url("myndir/logo.png");
   background-size: 30px;
   content: "";
-
   height: 30px;
   margin-right: 4.5px;
   position: relative;
@@ -246,13 +273,11 @@ img {
 .shop {
   display: flex;
   align-items: center;
-
   font-family: "Lora", helvetica, arial, sans-serif;
   font-size: 24px;
   position: relative;
   z-index: 100;
 }
-
 
 .header {
   display: flex;
@@ -261,7 +286,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-
   flex-direction: column;
   justify-content: space-between;
   position: relative;
@@ -271,7 +295,6 @@ img {
 .mainheading {
   display: flex;
   align-items: center;
-
   flex-direction: column;
   padding: 87px 0 105px;
   width: 100%;
@@ -299,7 +322,6 @@ img {
 .hamburger-menu {
   display: flex;
   align-items: center;
-
   height: 60px;
   justify-content: center;
   width: 60px;
@@ -333,7 +355,6 @@ img {
 
 .hamburger-menu-dropdown ul {
   display: flex;
-
   align-items: center;
   background-color: var(--color-light);
   flex-direction: column;
@@ -381,9 +402,6 @@ ul .hamburger-li .hamburger-a {
   margin-top: 15px;
 }
 
-
-
-
 /** Meginmál **/
 .main {
   display: grid;
@@ -394,45 +412,6 @@ ul .hamburger-li .hamburger-a {
   max-width: var(--max-width);
 }
 
-/* Header */
-/* .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing);
-  padding-top: var(--spacing);
-  width: 100%;
-  color: var(--color-gold-light);
-} */
-/* 
-.header header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: var(--width-offset);
-  text-align: center;
-} */
-
-/** Valmynd **/
-/* .navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: var(--spacing) 0;
-  width: 100%;
-  background-color: #FFFFFF;
-  color: var(--color-dark);
-} */
-/* 
-.navigation ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--spacing);
-  width: 100%;
-  max-width: var(--width-offset);
-  list-style: none;
-} */
 /** Fótur **/
 .footer {
   display: grid;
@@ -456,7 +435,7 @@ ul .hamburger-li .hamburger-a {
   justify-items: center;
   margin-bottom: calc(var(--spacing) * 2);
   /* width: 100%; */
-  background-color: #E1CEC2;
+  background-color: #e1cec2;
   padding: 12px;
 }
 
@@ -468,7 +447,7 @@ ul .hamburger-li .hamburger-a {
   min-height: 100px;
   width: 100%;
   color: var(--color-dark);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   margin: 12px;
   /* margin-right: 0; */
@@ -502,13 +481,13 @@ ul .hamburger-li .hamburger-a {
   padding: 6px;
   font-family: inherit;
   font-size: 1rem;
-  background-color: #FEFEFE;
-  color: #3C2A1E;
-  border: 1px solid #6F4E37;
+  background-color: #fefefe;
+  color: #3c2a1e;
+  border: 1px solid #6f4e37;
 }
 
 .slay {
-  background-color: #E1CEC2;
+  background-color: #e1cec2;
   border-radius: 4px;
   padding: 6px;
 }
@@ -517,7 +496,6 @@ ul .hamburger-li .hamburger-a {
   .boxes {
     grid-template-columns: repeat(var(--columns), 1fr);
   }
-  
   .boxes .box {
     grid-column: span 6;
   }
