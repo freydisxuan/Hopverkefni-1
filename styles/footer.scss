@@ -1,12 +1,56 @@
 /** Fótur **/
+/*
 .footer {
   display: grid;
+*/
   /* justify-items: center; */
+  /*
   padding: var(--vertical-space);
   border-top: var(--border-large) solid var(--color-gold);
   background-color: var(--color-dark);
   color: var(--color-gold-light);
   text-align: center;
+}
+*/
+
+/** footer **/
+
+.footer {
+  padding: var(--spacing);
+  border-top: var(--border-large) solid var(--color-gold);
+  width: 100%;
+
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+}
+.footer .content {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+}
+@media (min-width: 500px) {
+  .footer .content {
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+    max-width: var(--max-width);
+  }
+}
+.footer .content section {
+  grid-column: span 12;
+}
+@media (min-width: 500px) {
+  .footer .content section {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 1000px) {
+  .footer .content section {
+    grid-column: span 4;
+  }
+}
+
+.footer h2 {
+  border-bottom: var(--border-small) solid var(--color-gold-light);
 }
 
 .footer ul {
