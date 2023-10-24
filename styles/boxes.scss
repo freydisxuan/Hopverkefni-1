@@ -10,6 +10,18 @@
   padding: 12px;
 }
 
+/* CARDS! ÁSDÍS*/
+.cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+  justify-items: center;
+  margin-bottom: calc(var(--spacing) * 2);
+  /* width: 100%; */
+  // background-color: #e1cec2;
+  padding: 12px;
+}
+
 .boxes .box {
   display: flex;
   flex-direction: column;
@@ -22,6 +34,11 @@
   border-radius: 5px;
   margin: 12px;
   /* margin-right: 0; */
+}
+
+.cards .card {
+  display: grid;
+  background-color: var(--color-light);
 }
 
 .boxes .box .title {

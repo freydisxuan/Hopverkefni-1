@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="is">
+<html lang="is" class="">
 
   <head>
     <meta charset="utf-8">
     <title>Pöntun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../grid.css">
     <meta name="Pöntun" content="Tæknibúðin Pöntun">
@@ -42,7 +43,82 @@
     </header>
     
 
-<h1>eitthvað flott hérna</h1>
+      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="./um.html">Um Veitingastaðinn</a></li>
+          <li><a href="./matsedill.html">Matseðill</a></li>
+          <li><strong>Pöntunarsíða</strong></li>
+        </ul>
+      </nav>
+
+      <header>
+        <h1>Pöntun</h1>
+      </header>
+    </div>
+       <main class="main" id="efni">
+        <form method="post" action="." class="boxes">
+          <fieldset class="box">
+            <h2>Kaupandi</h2>
+            <div>
+              <label for="name">Nafn</label>
+              <input id="name" type="text" required>
+            </div>
+            <div>
+              <label for="email">Netfang</label>
+              <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+            </div>
+            
+            <div>
+              <label for="special">Viltu taka eitthvað fram?</label>
+              <textarea id="special"></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="box">
+            
+            
+          </fieldset>
+  
+          <fieldset class="box">
+            <h2>Afhending</h2>
+            <div>
+              <label for="name">Nafn</label>
+              <input id="name" type="text" required>
+            </div>
+            <div>
+              <label for="email">Netfang</label>
+              <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+            </div>
+            <div>
+              <label for="phone">Sími</label>
+              <input id="phone" type="tel" required placeholder="345-6789">
+            </div>
+          </fieldset>
+          <fieldset class="box">
+            <legend>Samþykkja og panta</legend>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="terms"><span>Ég samþykki skilmála
+                  Veitingastaðsins</span></label>
+            </div>
+            <button class="button">Panta</button>
+          </fieldset>
+          <datalist id="foods">
+            <option>Lasagna</option>
+            <option>Sveppa risotto</option>
+            <option>Ferskt pasta</option>
+            <option>Quesadilla</option>
+            <option>Falafel með</option>
+            <option>Súpa dagsins</option>
+            <option>Kryddaðar sætkartöflur</option>
+            <option>Hamborgari</option>
+            <option>Pizza</option>
+          </datalist>
+        </form>
+      </main>
+     </div>
 
 <footer class="footer">
   <div class="content">
@@ -52,7 +128,7 @@
       <li>Opið alla virka daga frá 9:00–18:00</li>
       <li>Opið á laugardögum frá 12:00–16:00</li>
       <li>Lokað á sunnudögum</li>
-    </ul>
+      </ul>
     </section>
     
     <section>

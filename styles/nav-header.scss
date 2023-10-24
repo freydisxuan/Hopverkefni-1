@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 40px;
+}
+
+.search-bar input {
+  width: 450px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,78 +1,136 @@
 <!DOCTYPE html>
-<html lang="is">
-
-  <head>
+<html lang="is" class="">
+  
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forsíða</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="../grid.css"> -->
+    <link rel="stylesheet" href="../grid.css">
     <meta name="Forsíða" content="Tæknibúðin Forsíða">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-  </head>
-  <div class="wrapper">
+</head>
   <body>
-    <header class="header">
-      <div class="header-nav">
-        <a href="index.html"><b class="shop">Tæknibúðin</b></a>
-        <nav class="navigation">
-          <ul>
-            <li>
-              <img src="myndir/glass.png" alt="">
-              <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
-            </li>
-            <li><a href="sidur/vorulisti.html">Nýjar vörur</a></li>
-            <li><a href="sidur/vorulisti.html">Tilboðs vörur</a></li>
-            <li><a href="sidur/vorulisti.html">Allar vörur</a></li>
-          </ul>
-        </nav>
-                 
-      <div class="icon-wrapper">
-       <div class="cart">
-        <div class="cart-number">1</div>
-        <a title="Karfan þín" href="/sidur/pontun.html"><img src="myndir/cart.png" alt=""></a>
-      </div>
-      <div class="hamburger-menu-wrapper">
-        <div class="hamburger-display">
-          <div class="hamburger-menu">
-            <img img src="myndir/burger.png" alt="Flokkar">
-          </div>
-          <input class="hamburger-notified" type="checkbox">
-          <div class="hamburger-menu-dropdown">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-nav">
+          <a href="index.html"><b class="shop">Tæknibúðin</b></a>
+          <nav class="navigation">
             <ul>
-              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Nýjar vörur</a></li>
-              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
-              <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Allar vörur</a></li>
-              <li class="hamburger-li">
-                 <img src="myndir/glass.png" alt="">
-                 <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
+              <li>
+                <img src="myndir/glass.png" alt="">
+                <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
               </li>
-           </ul>
+              <li><a href="sidur/vorulisti.html">Nýjar vörur</a></li>
+              <li><a href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+              <li><a href="sidur/vorulisti.html">Allar vörur</a></li>
+            </ul>
+          </nav>
+                   
+        <div class="icon-wrapper">
+         <div class="cart">
+          <div class="cart-number">1</div>
+          <a title="Karfan þín" href="/sidur/pontun.html"><img src="myndir/cart.png" alt=""></a>
         </div>
-       </div>
-      </div>
-      </div>
-      </div>
-      <div class="mainheading">
-        <h1>Tilboðsvika</h1>
-        <span class="subheading">Keyptu græjurnar hjá okkur!</span>
-      </div>
-    </header>
-    
-  <main id="efni" class="main">
+        <div class="hamburger-menu-wrapper">
+          <div class="hamburger-display">
+            <div class="hamburger-menu">
+              <img img src="myndir/burger.png" alt="Flokkar">
+            </div>
+            <input class="hamburger-notified" type="checkbox">
+            <div class="hamburger-menu-dropdown">
+              <ul>
+                <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Nýjar vörur</a></li>
+                <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+                <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Allar vörur</a></li>
+                <li class="hamburger-li">
+                   <img src="myndir/glass.png" alt="">
+                   <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
+                </li>
+             </ul>
+          </div>
+         </div>
+        </div>
+        </div>
+        </div>
+        <div class="mainheading">
+          <h1>Tilboðsvika</h1>
+          <span class="subheading">Keyptu græjurnar hjá okkur!</span>
+        </div>
+      </header>
+      
+      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
-    <section>
-        <h2>Nýjar vörur í hverri viku</h2>
-        <p>Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum upp á frábært verð því lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet elementum orci, ac feugiat mauris.</p>
-        <p><a href= "sidur/vorulisti.html">SKOÐA NÝJAR VÖRUR</a></p>
-    </section>
+      <main id="efni" class="main">
+        <div class="cards">
+          <section class="card">
+            <h2>Nýjar vörur í hverri viku</h2>
+              <p>
+                 Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum
+                 upp á frábært verð því lorem ipsum dolor sit amet, consectetur
+                 adipiscing elit. Donec sit amet elementum orci, ac feugiat
+                 mauris.
+              </p>
+              <a class="button" href="./sidur/vorulisti.html">SKOÐA NÝJAR VÖRUR</a>
+          </section>
+          <div class="card">
+            <img src="../myndir/airplane.png" width="317" alt="">
+          </div>
+        </div>
 
-    <div class="boxes">
-        <section>
-        <h2>Nokkrar af nýjustu vörunum okkar</h2>
+        <section class="newest-products">
+          <h2>Nokkrar af nýjustu vörunum okkar</h2>
+
+          <ul class="boxes">
+            <li class="box">
+              <img src="../myndir/motherboard.png" width="317" alt="">
+              <h3 class="box-title">Tæknilegt móðurborð</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Takmarkað magn</p>
+                <p>189.000 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/robot.png" width="317" alt="">
+              <h3 class="box-title">Vinalegur vinnuróbot</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir börn</p>
+                <p>189.000 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/robot.png" width="317" alt="">
+              <h3 class="box-title">Vinalegur vinnuróbot</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir börn</p>
+                <p>1.499.990 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/matrix.png" width="317" alt="">
+              <h3 class="box-title">Matrixið</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir róbota</p>
+                <p>299.999.999.499.990 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+          </ul>
         </section>
-    </div> 
+
+   
     
 
       <section class="box">
@@ -186,7 +244,116 @@
   
    <div><p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p></div>
 
-  </footer>
+
+        <section class=""></section>
+
+        <div class="cards">
+          <section class="card">
+            <img src="../myndir/voruhus.png" width="317" alt="">
+          </section>
+          <section class="card">
+            <h2>Nýjar vörur í hverri viku</h2>
+            <div class="content">
+              <p>
+                Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum
+                upp á frábært verð því lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec sit amet elementum orci, ac feugiat
+                mauris.
+              </p>
+            </div>
+            <a class="button" href="./sidur/vorulisti.html"
+              >SKOÐA NÝJAR VÖRUR</a
+            >
+          </section>
+        </div>
+
+        <section class="our-products">
+          <h2>Nokkur dæmi úr ótrúlegu vöruúrvali okkar</h2>
+
+          <ul class="boxes">
+            <li class="box">
+              <img src="../myndir/motherboard.png" width="317" alt="">
+              <h3 class="box-title">Tæknilegt móðurborð</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Takmarkað magn</p>
+                <p>189.000 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/robot.png" width="317" alt="">
+              <h3 class="box-title">Vinalegur vinnuróbot</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir börn</p>
+                <p>189.000 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/robot.png" width="317" alt="">
+              <h3 class="box-title">Vinalegur vinnuróbot</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir börn</p>
+                <p>1.499.990 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+
+            <li class="box">
+              <img src="../myndir/matrix.png" width="317" alt="">
+              <h3 class="box-title">Matrixið</h3>
+              <div class="content">
+                <p>Nýtt</p>
+                <p>Ekki fyrir róbota</p>
+                <p>299.999.999.499.990 kr.</p>
+              </div>
+              <a class="button" href="./sidur/um.html">SETJA Í KÖRFU</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="content">
+          <section>
+            <h2>OPNUNARTÍMI</h2>
+            <ul>
+              <li>Opið alla virka daga frá 9:00–18:00</li>
+              <li>Opið á laugardögum frá 12:00–16:00</li>
+              <li>Lokað á sunnudögum</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>HAFÐU SAMBAND</h2>
+            <ul>
+              <li>Skiptiborð: 234–4568</li>
+              <li>Tölvupóstur: thjonusta@example.org</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>ANNAÐ</h2>
+            <ul>
+              <li>Rekja sendingu</li>
+              <li>Skilaréttur</li>
+              <li>Um okkur</li>
+              <li>Störf</li>
+            </ul>
+          </section>
+        </div>
+
+        <div><p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p></div>
+      </footer>
   </body>
+
   </div>
+
+
+
 </html>
