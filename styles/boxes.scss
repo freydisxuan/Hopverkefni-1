@@ -12,14 +12,17 @@
 
 /* CARDS! ÁSDÍS*/
 .cards {
-  display: grid;
-  grid-template-rows: auto;
-  gap: var(--vertical-space);
-  justify-items: center;
-  margin-bottom: calc(var(--spacing) * 2);
-  /* width: 100%; */
-  // background-color: #e1cec2;
-  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .boxes .box {
@@ -34,11 +37,6 @@
   border-radius: 5px;
   margin: 12px;
   /* margin-right: 0; */
-}
-
-.cards .card {
-  display: grid;
-  background-color: var(--color-light);
 }
 
 .boxes .box .title {
