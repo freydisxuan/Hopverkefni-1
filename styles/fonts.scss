@@ -1,14 +1,13 @@
-// Leturgerðir
-
+/* Leturgerðir */
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/Lato-Regular.ttf") format("woff");
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
-
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans Display";
   font-style: normal;
-  src: url("./fonts/Lato-Bold.ttf") format("woff");
+  font-display: swap;
+  src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format("woff");
 }

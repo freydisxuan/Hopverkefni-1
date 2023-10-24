@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("myndir/background.png");
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.mainheading {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  padding: 87px 0 105px;
+  width: 100%;
+}
+
+.mainheading .subheading {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.mainheading h1 {
+  font-size: 160px;
+  line-height: 192px;
+}
