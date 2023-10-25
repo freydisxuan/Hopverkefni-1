@@ -9,11 +9,11 @@
   flex-wrap: wrap;
   height: 60px;
   justify-content: space-between;
-}
 
-.header-nav a {
-  // color: var(--color-black-coffee);
-  text-decoration: none;
+  a {
+    // color: var(--color-black-coffee);
+    text-decoration: none;
+  }
 }
 
 .navigation {

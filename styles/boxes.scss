@@ -15,18 +15,18 @@
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
-  gap: var(--gutter);
+  // gap: var(--vertical-space);
 
   .card {
     display: flex;
 
-    grid-column: span 7;
+    grid-column: 3 / span 4;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .card-image {
     display: flex;
-    grid-column: span 4;
+    grid-column: 8 / span 4;
   }
 }
 
