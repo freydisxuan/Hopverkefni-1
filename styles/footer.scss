@@ -3,8 +3,8 @@
 .footer {
   display: grid;
 */
-  /* justify-items: center; */
-  /*
+/* justify-items: center; */
+/*
   padding: var(--vertical-space);
   border-top: var(--border-large) solid var(--color-gold);
   background-color: var(--color-dark);
@@ -18,7 +18,8 @@
 .footer {
   padding: var(--spacing);
   border-top: var(--border-large) solid var(--color-gold);
-  width: 100%;
+  width: var(--width-offset);
+  max-width: var(--max-width);
 
   background-color: var(--color-dark);
   color: var(--color-gold-light);
