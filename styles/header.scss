@@ -14,7 +14,17 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-  padding: var(--spacing);
+  margin: 0 auto;
+}
+
+.small-header {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .mainheading {
