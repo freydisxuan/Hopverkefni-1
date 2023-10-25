@@ -12,16 +12,21 @@
 
 /* CARDS! ÁSDÍS*/
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+  gap: var(--gutter);
 
   .card {
     display: flex;
+
+    grid-column: span 7;
     flex-direction: column;
     align-items: center;
+  }
+  .card-image {
+    display: flex;
+    grid-column: span 4;
   }
 }
 
