@@ -6,7 +6,7 @@
   /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
   --vertical-space: calc(var(--gutter));
   /* Hámarksbreidd á efni */
-  --max-width: 1400px;
+  --max-width: 1440px;
   --width-offset: calc(100% - (2 * var(--offset)));
   /* Border breiddir */
   --border-small: 1px;
@@ -30,6 +30,17 @@
   --color-black-coffee: #402c1c;
   --color-light: #ffffff;
   --color-coffee-with-milk: #e1cec2;
+
+  /* Nýjir litir fyrir hópverkefni */
+  --color-footer: #3c2a1e;
+  --color-footer-text-header: #fefefe;
+  --color-footer-text: #ffffff;
+  --color-footer-border: #e1cec2;
+  --color-footer-border-dark: #6f4e37
+  
+
+
+
 
   /* Letur stillingar */
   --font-base-size: 1rem;
