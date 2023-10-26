@@ -6,7 +6,6 @@
   width: 100%;
   background-color: #3C2A1E  ;
   color: #FEFEFE;
-
 }
 
 .footer .content {
@@ -16,8 +15,6 @@
   margin: 0 auto; 
   width: var(--width-offset);
   max-width: var(--max-width);
- 
-  
 }
 
 @media (min-width: 500px) {
@@ -53,11 +50,11 @@
 
 .footer h2 {
   border-bottom: var(--border-small) solid #FEFEFE;
+  margin: 0;
 }
 
 .footer ul {
   list-style: none;
-  margin-left: 8px; 
 }
 
 .copyright {
