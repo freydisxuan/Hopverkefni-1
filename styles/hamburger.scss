@@ -16,6 +16,16 @@
   width: 60px;
 }
 
+.hamburger-menu-wrapper {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .hamburger-menu-wrapper {
+    display: flex;
+  }
+}
+
 .hamburger-menu img {
   height: 30px;
   left: 455px;

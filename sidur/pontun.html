@@ -14,31 +14,47 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="small-header">
       <div class="header-nav">
         <a href="../index.html"><b class="shop">Tæknibúðin</b></a>
         <nav class="navigation">
           <ul>
             <li>
               <img src="../myndir/glass.png" alt="">
-              <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
+              <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
             </li>
-            <li><a href="../sidur/vorulisti.html">Nýjar vörur</a></li>
-            <li><a href="../sidur/vorulisti.html">Tilboðs vörur</a></li>
-            <li><a href="../sidur/vorulisti.html">Allar vörur</a></li>
+            <li><a href="vorulisti.html">Nýjar vörur</a></li>
+            <li><a href="vorulisti.html">Tilboðs vörur</a></li>
+            <li><a href="vorulisti.html">Allar vörur</a></li>
           </ul>
-        </nav>
-                 
-      <div class="icon-wrapper">
-       <div class="cart">
-        <div class="cart-number">1</div>
-        <a title="Karfan þín" href="/sidur/pontun.html"><img src="../myndir/cart.png" alt=""></a>
+        </nav>         
+        <div class="icon-wrapper">
+          <div class="cart">
+            <div class="cart-number">1</div>
+            <a title="Karfan þín" href="../sidur/pontun.html"><img src="../myndir/cart.png" alt=""></a>
+          </div>
+          <div class="hamburger-menu-wrapper">
+            <div class="hamburger-display">
+              <div class="hamburger-menu">
+                <img src="../myndir/burger.png" alt="Flokkar">
+              </div>
+              <input class="hamburger-notified" type="checkbox">
+              <div class="hamburger-menu-dropdown">
+                <ul>
+                  <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Nýjar vörur</a></li>
+                  <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+                  <li class="hamburger-li"><a class="hamburger-a" href="sidur/vorulisti.html">Allar vörur</a></li>
+                  <li class="hamburger-li">
+                    <img src="myndir/glass.png" alt="">
+                    <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-   
     </header>
-    
     <main class="main" id="efni">
       <H1 class="Pöntun">Pöntun</H1>  
       <form method="post" class="pboxes">
@@ -51,22 +67,22 @@
     
     <div class="input-item">
     <label for="name">Nafn</label>
-    <input type="text" id="name"/>
+    <input type="text" id="name">
     </div>
     
     <div class="input-item">
     <label for="Kennitala">Kennitala</label>
-    <input type="text" id="Kennitala"/>
+    <input type="text" id="Kennitala">
     </div>
     
     <div class="input-item">
     <label for="Netfang">Netfang</label>  
-    <input type="text" id="Netfang"/>
+    <input type="text" id="Netfang">
     </div>
     
     <div class="input-item">
     <label for="Simi">Sími</label>
-    <input type="text" id="Simi"/> 
+    <input type="text" id="Simi"> 
     </div>
     
     </div>
@@ -77,7 +93,7 @@
       <div class="line">
       <div class="left">
       <div class="image-square">
-      <img src="../myndir/robot.png" width="30px">
+      <img src="../myndir/robot.png" width="30" alt="">
       </div>
       <p>Vinalegur vinnuróbot</p>
       </div>
@@ -87,7 +103,7 @@
       <div class="line">
       <div class="left">
       <div class="image-square">
-      <img src="../myndir/motherboard.png">
+      <img src="../myndir/motherboard.png" alt="">
       </div>
       <p>Tæknilegt móðurborð</p>
       </div>
@@ -108,22 +124,22 @@
     <div class="input">
     <div class="input-item">
       <label for="Heimilisfang">Heimilisfang</label>
-      <input type="text" id="Heimilisfang"/>
+      <input type="text" id="Heimilisfang">
       </div>
     
       <div class="input-item">
         <label for="post">Postnúmer</label>
-        <input type="text" id="post"/>
+        <input type="text" id="post">
         </div>
     
         <div class="input-item">
           <label for="Stadur">Staður</label>
-          <input type="text" id="Stadur"/>
+          <input type="text" id="Stadur">
           </div>
     
           <div class="input-item">
             <label for="ath">Athugasemd</label>
-            <input type="text" id="ath"/>
+            <input type="text" id="ath">
             </div>
     
     </div>
@@ -170,6 +186,6 @@
     
       </footer>
       <p class="copyright">© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
-        </div>
+       
       </body>
     </html>
