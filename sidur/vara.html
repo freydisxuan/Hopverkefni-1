@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="is">
+<html lang="is" class="">
+
   <head>
-    <meta charset="utf-8" />
-    <title>Vara</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../grid.css" />
-    <meta name="Vara" content="Tæknibúðin Vara" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name=""viewport" content="width=device-width, initial-scale=1">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8">
+    <title>Pöntun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../grid.css">
+    <meta name="Pöntun" content="Tæknibúðin Pöntun">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="layout">
-      <header class="header">
-        <img src="../myndir/logo.png" width="30" alt="" />
-        <h1>
-          <strong><a href="../index.html">Tæknibúðin</a></strong>
-        </h1>
-
-        <nav>
+    <header class="header">
+      <div class="header-nav">
+        <a href="../index.html"><b class="shop">Tæknibúðin</b></a>
+        <nav class="navigation">
           <ul>
-            <li><input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."/></li>
-            <li><a href="../sidur/vara.html">Nýjar vörur</a></li>
-            <li><a href="../sidur/vara.html">Tilboðsvörur</a></li>
-            <li><a href="../sidur/vorulisti.html">Allar vörur</a></li>
-            <li><a href="../sidur/pontun.html"><img src="../myndir/cart.png" width="30" alt=""/></a>
+            <li>
+              <img src="../myndir/glass.png" alt="">
+              <input aria-label="Leita að vöru" type="search" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl."/>
             </li>
+            <li><a href="../sidur/vorulisti.html">Nýjar vörur</a></li>
+            <li><a href="../sidur/vorulisti.html">Tilboðs vörur</a></li>
+            <li><a href="../sidur/vorulisti.html">Allar vörur</a></li>
           </ul>
         </nav>
-      </header>
+                 
+      <div class="icon-wrapper">
+       <div class="cart">
+        <div class="cart-number">1</div>
+        <a title="Karfan þín" href="/sidur/pontun.html"><img src="../myndir/cart.png" alt=""></a>
+      </div>
+      </div>
+      </div>
+   
+    </header>
 
       <main class="main">
-        <section class="cards">
-          <p><img src="../myndir/motherboard.png" width="690px" alt="" /></p>
-          <div class="card">
+        <section class="vboxes">
+        <div class="vbox"> 
+        <img src="../myndir/motherboard.png" alt="" class="full"/>
+        </div>
+          <div class="vbox">
             <h1>Tæknilegt móðurborð</h1>
+            <p><a class="slay">Nýtt</a> <a class="slay">Takmarkað magn</a></p>
             <p>
               Afskaplega gott, tæknilegt, og traust móðurborð. Passar vel í
               allar gerðir tölva sem taka við tæknilegum móðurborðum. Nam
@@ -50,13 +57,16 @@
               sapien ac risus luctus porta nec sed ante. Nam quis ex quis dolor
               auctor vehicula.
             </p>
-            <button>SETJA Í KÖRFU</button>
+            <div class="line3">
+            <p>189.000 kr.</p>
+            <div class="link"><a href="../sidur/vara.html">SETJA Í KÖRFU</a></div>
           </div>
+        </div>
         </section>
 
         <div class="eiginleiki">
           <section>
-          <h2>Eiginleikar</h2>
+          <h1><strong>Eiginleikar</strong></h1>
           </section>
           <section>
           <h2>Kubbasett</h2>
@@ -87,7 +97,7 @@
         </div>
 
         <section>
-          <h2>Tengdar vörur</h2>
+          <p class="tengdar">Tengdar vörur</p>
 
           <ul class="boxes">
             <li class="box">
@@ -115,12 +125,12 @@
           <section>
             <h2>OPNUNARTÍMI</h2>
             <ul>
-              <li>Opið alla virka daga frá 9:00–18:00</li>
-              <li>Opið á laugardögum frá 12:00–16:00</li>
-              <li>Lokað á sunnudögum</li>
-            </ul>
+            <li>Opið alla virka daga frá 9:00–18:00</li>
+            <li>Opið á laugardögum frá 12:00–16:00</li>
+            <li>Lokað á sunnudögum</li>
+          </ul>
           </section>
-
+          
           <section>
             <h2>HAFÐU SAMBAND</h2>
             <ul>
@@ -128,20 +138,20 @@
               <li>Tölvupóstur: thjonusta@example.org</li>
             </ul>
           </section>
-
+      
           <section>
-            <h2>ANNAÐ</h2>
-            <ul>
+          <h2>ANNAÐ</h2>
+          <ul>
               <li>Rekja sendingu</li>
               <li>Skilaréttur</li>
               <li>Um okkur</li>
               <li>Störf</li>
-            </ul>
+          </ul>
           </section>
         </div>
-
-        <div><p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p></div>
-      </footer>
-    </div>
-  </body>
-</html>
+      
+        </footer>
+        <p class="copyright">© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+          </div>
+        </body>
+      </html>
