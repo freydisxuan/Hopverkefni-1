@@ -1,30 +1,12 @@
-/** Fótur **/
-
-/*
-.footer {
-  display: grid;
-*/
-  /* justify-items: center; */
-
-  /*
-  padding: var(--vertical-space);
-  border-top: var(--border-large) solid var(--color-gold);
-  background-color: var(--color-dark);
-  color: var(--color-gold-light);
-  text-align: center;
-}
-*/
-
 /** footer **/
-
 .footer {
   margin: 0 auto; 
   padding-top: 3rem;
-  
   max-width: var(--max-width);
+  width: 100%;
+  background-color: #3C2A1E  ;
+  color: #FEFEFE;
 
-  background-color: var(--color-footer);
-  color: var(--color-footer-text);
 }
 
 .footer .content {
@@ -69,24 +51,28 @@
 
 }
 
-
 .footer h2 {
-  border-bottom: var(--border-small) solid var(--color-footer-border);
-  color: var(--color-footer-text-header);
+  border-bottom: var(--border-small) solid #FEFEFE;
 }
 
 .footer ul {
   list-style: none;
+  margin-left: 8px; 
 }
+
+.copyright {
+  text-align: center; 
+  background-color: #3C2A1E;
+  color:#FEFEFE;
+  padding: 1rem;
+
+  border-top: solid #6F4E37 1px;
+}
+
 
 .footer ul li{
   margin-bottom: 0.5rem;
 }
-.footer p{
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  padding: 0.5rem 0 0.5rem 0;
-  border-top: 1px solid var(--color-footer-border-dark);
-}
+
+
 
