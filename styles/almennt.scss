@@ -24,7 +24,8 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
 }
 
 img {
