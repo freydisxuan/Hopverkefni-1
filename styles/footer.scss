@@ -26,31 +26,37 @@
   color: var(--color-gold-light);
 }
 
-.footer .content {
+.footer .content1 {
   display: grid;
   grid-template-rows: auto;
   gap: var(--vertical-space);
 }
 
-
-.footer .content .footer-section {
-  grid-column: span 12;
-}
-
-@media (max-width: 500px) {
-  .footer .content .footer-section{
-    grid-column: span 6;
-  }
-  
-}
-
-@media (max-width: 500px) {
-  .footer .content {
+@media (min-width: 0px) {
+  .footer .content1 {
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: auto;
     max-width: var(--max-width);
   }
 }
+
+.footer .content1 .footer-section{
+  grid-column: span 12;
+}
+
+@media (min-width: 500px) {
+  .footer .content1 .footer-section {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer .content1 .footer-section {
+    grid-column: span 4;
+  }
+}
+
+
 
 
 
