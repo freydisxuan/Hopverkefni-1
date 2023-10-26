@@ -62,16 +62,6 @@
 //   flex-direction: column;
 // }
 
-@media (min-width: 499px) {
-  .mainheading {
-    font-size: 38px;
-  }
-
-  .mainheading .subheading {
-    font-size: 36px;
-  }
-}
-
 @media (max-width: 1400px) {
   .mainheading h1 {
     font-size: 160px;
@@ -81,5 +71,15 @@
   .mainheading .subheading {
     font-size: 36px;
     line-height: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainheading h1 {
+    font-size: 80px;
+  }
+
+  .mainheading .subheading {
+    font-size: 36px;
   }
 }
