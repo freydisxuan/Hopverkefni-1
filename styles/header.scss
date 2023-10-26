@@ -18,6 +18,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 500px) {
+  .header {
+    clip-path: none;
+  }
+}
+
 .mainheader {
   display: grid;
   grid-template-columns: 100%;
