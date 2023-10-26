@@ -10,16 +10,27 @@
   padding: 12px;
 }
 
+
 /* CARDS! ÁSDÍS*/
 .cards {
   display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
-  gap: var(--vertical-space);
-  justify-items: center;
-  margin-bottom: calc(var(--spacing) * 2);
-  /* width: 100%; */
-  // background-color: #e1cec2;
-  padding: 12px;
+  gap: 1rem;
+
+  .card {
+    display: flex;
+    grid-column-start: span 2;
+
+    grid-column: span 4;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card img {
+    display: flex;
+    grid-column-start: 7;
+    grid-column: span 4;
+  }
 }
 
 .boxes .box {
@@ -34,6 +45,8 @@
   border-radius: 5px;
   margin: 12px;
   /* margin-right: 0; */
+
+  grid-column: span 12;/*elvar bætti við*/
 }
 
 .cards .card {
