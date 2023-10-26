@@ -6,14 +6,9 @@
   
     .var {
       display: flex;
-
-
-
-
       grid-column: span 12;
       flex-direction: column;
       
-
       h1{
         font-size: 60px;
       }
@@ -44,8 +39,6 @@
         object-fit: cover;
         object-position: top center;
       }
-
-
   }
 
   @media (min-width: 500px) {
