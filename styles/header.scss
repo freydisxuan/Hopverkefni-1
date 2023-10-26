@@ -56,7 +56,7 @@
 //   flex-direction: column;
 // }
 
-@media (max-width: 500px) {
+@media (min-width: 499px) {
   .mainheading {
     font-size: 38px;
   }
@@ -66,7 +66,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .mainheading h1 {
     font-size: 160px;
     line-height: 192px;
