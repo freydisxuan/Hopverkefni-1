@@ -20,6 +20,18 @@
   display: block;
 }
 
+@media (max-width: 500px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-nav {
+    // justify-content: space-evenly;
+  }
+}
+
 .navigation ul {
   display: flex;
   align-items: center;
